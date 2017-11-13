@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+ margin: 0;
+ padding: 0;
+}
+body {
+    font: normal normal 13px/1.25 arial, helvetica, sans-serif;
+}
+
+.nav-primary {
+    background: auto;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-primary li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom; /* IE9 fix: li v-aligns with baseline on hover without this */
+}
+
+.nav-primary a {
+    color: #000000;
+    display: block;
+    font-size: 110%;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 0.99em 1.5em; /* slightly less than one to prevent rounding error */
+    position: relative;
+    text-decoration: none;
+}
+
+
+.nav-primary a:hover {
+    background: #FF063C;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-caption a{
+	color: #FCFCFC;
+	overflow: hidden;
+	position: relative;
+}
+.carousel-caption a:hover{
+	color: #FF063C;
+	overflow: hidden;
+}
+.media-body a{
+	color: #000000;
+	overflow: hidden;
+	position: relative;
+}
+.media-body a:hover{
+	color: #FF063C;
+	overflow: hidden;
+}
+.caption a{
+	color: #000000;
+	overflow: hidden;
+	position: relative;
+}
+.caption a:hover{
+	color: #FF063C;
+	overflow: hidden;
+}
+.nav-primary a:hover::after {
+    top: -5px;
+}
+.paragraf {
+	font-size:14px; 
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-primary a {
+        border-radius: 0.6em;
+        margin: 0.35em;
+        padding: 0.5em;
+    }
+  
+    .nav-primary a:hover {
+        background-image: none;
+        /*border: 0.25em solid rgba(78, 127, 103, 100);
+        padding: 0.25em;*/
+      box-shadow: inset 0 -5px 0 0 rgba(78, 127, 103, 100);
+    }
+}
+/*------------------- papan pencarian ---------------*/
+.search-box{
+ width:50%;
+ min-height:10px;
+ margin:0px auto;
+ position:relative;
+ border:0px;
+ padding:5px;
+ overflow:hidden;
+
+}
+.search-box > form {
+ width:100%;
+}
+.search-box > form input[type="text"]{
+ width:80%;
+ padding:12px;
+ border:2px solid #F93336;
+ float:left;
+}
+.search-box > form > button {
+ width:20%;
+ padding:12px;
+ border:1px solid #ddd;
+ float:left;
+ cursor:pointer;
+ background:#F93336;
+ color:#fff;
+}
+#sidebar{
+	width: 270px;
+	float: right;
+	padding: 10px 10px 10px 10px;
+	margin-left: 19px;
+	margin-right: 0px;
+}
+#sidebar h2{
+	font-size: 18px;
+	margin: 10px 0;
+}
+#sidebar p{
+	line-height: 20px;
+	color: #636363;
+}
+#sidebar ul li a{
+	color: #636363;
+	text-decoration: none;
+	margin-left: -1px;
+}
+#sidebar ul{
+	margin-left: 17px;
+	
+}
+@media (max-width:600px){
+ .search-box{
+  width:100%;
+ }
+}
+/*-------------------------------form komentar-----------------------------------------------------*/
+#formKomentar{
+    border: 5px solid #d1d1d1;
+    width:720px;
+    padding:10px;
+}
+input, textarea{
+     padding: 10px;
+     border:3px solid #e6e6e6;
+     border-radius: 5px;
+     margin-bottom: 15px; 
+}
+input:focus, textarea:focus{
+    border:3px solid #F93336;
+}
+ 
+textarea{
+    width:500px;
+}
+input[type="submit"]{
+     cursor: pointer;
+     background: -webkit-linear-gradient(top, #efefef, #ddd);
+     background: -moz-linear-gradient(top, #efefef, #ddd);
+     background: -ms-linear-gradient(top, #efefef, #ddd);
+     background: -o-linear-gradient(top, #efefef, #ddd);
+     background: linear-gradient(top, #efefef, #ddd);
+     color: #333;
+     text-shadow: 0px 1px 1px rgba(255,255,255,1);
+     border: 1px solid #ccc;
+}
+ 
+input[type="submit"]:hover {
+     background: -webkit-linear-gradient(top, #eee, #ccc);
+     background: -moz-linear-gradient(top, #eee, #ccc);
+     background: -ms-linear-gradient(top, #eee, #ccc);
+     background: -o-linear-gradient(top, #eee, #ccc);
+     background: linear-gradient(top, #eee, #ccc);
+     border: 1px solid #bbb;
+}
